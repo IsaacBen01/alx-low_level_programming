@@ -7,22 +7,17 @@
  * Return: Always 0
  */
 
-void print_alphabet_x10()
+void print_alphabet_x10(void)
 {
-	int n = 0;
-	char j;
+char ch;
+int num;
 
-	while (n <= 9)
-	{
-		j = 'a';
-		while (j <= 'z')
-		{
-			_putchar(j);
-			++j;
-		}
-		_putchar('\n');
-		++n;
-	}
-	_putchar('\n');
+for (num = 0; num < 10; ++num)
+{
+for (ch = 'a'; ch <= 'z'; ++ch)
+{
+_putchar(ch);
 }
-
+_putchar('\n');
+}
+}
